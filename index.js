@@ -6,7 +6,7 @@ const server = http.createServer((req,res)=>{
     })
     res.end(
         JSON.stringify({
-            "slackUsername":"tamynator",
+            "slackUsername":"Tamynator",
             "backend": true,
             "age": 20,
             "bio": "i am a tech entusiast with knowledge in dart(flutter), javascript and some webtechnology. I a recently started node and i'm happy to join like mind in this hng internship to futher my knowledge in backend using node"
