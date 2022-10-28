@@ -1,6 +1,10 @@
 const http = require('http')
 const port = process.env.PORT || 3000
 const server = http.createServer((req,res)=>{
+    res.setHeader('Access-Control-Allow-origin','*')
+    res.setHeader('Access-Control-Request-Method','*')
+    res.setHeader('Access-Control-Allow-Methods','OPTIONS, GET')
+    res.setHeader('Access-Control-Allow-Headers','*')
     res.writeHead(200,{
         "content-Type": "application/json"
     })
