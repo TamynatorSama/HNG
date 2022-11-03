@@ -5,7 +5,6 @@ const app = express()
 app.use(express.json())
 
 const port = process.env.PORT || 3000
-
 const operation_type_enum = Object.freeze({
     addition: "addition",
     substraction:  "substraction",
