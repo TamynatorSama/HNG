@@ -67,5 +67,5 @@ function performOperation(operation_type_input,firtsNum,lastNum){
 
 
 app.listen(port,()=>{
-    console.log(`listening on port ${port}`)
+    console.log(`server running on port ${port}`)
 })
