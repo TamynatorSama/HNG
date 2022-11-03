@@ -36,10 +36,10 @@ app.post('/',(req,res)=>{
         })
     }
     let result = performOperation(operation,x,y)
-    return res.status(400).json({
-        slackUsername: "Tamynator",
-        operation_type: operation,
-        result: result
+    return res.header('Content-Type',"application/json") .status(400).json({
+        "slackUsername": "Tamynator",
+        "result": result,
+        "operation_type": operation,
     })
     
 
